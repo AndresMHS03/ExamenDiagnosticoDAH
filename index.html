@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>Login</title>
+    </head>
+
+    <body>
+        <SCRIPT  language=JavaScript> 
+            function go(){
+
+                if (document.form.password.value=='admin' && document.form.user.value=='admin'){ 
+                document.form.submit(); 
+                                                                                                        } 
+                else{ 
+                     alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                     } 
+                            } 
+        </SCRIPT> 
+        <FORM name=form action="tabla.html">
+
+            <P>Usuario:    <INPUT type=text name=user placeholder="Usuario"> 
+            <P>Contraseña: <INPUT type=password name=password placeholder="Contraseña"> 
+            <INPUT onclick=go() type=button value=Acceder>
+
+        </FORM> 
+    </body>
+</html>
